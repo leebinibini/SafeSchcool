@@ -30,11 +30,8 @@ public class EmployeeEntity {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id")  // FK 설정
     @JsonBackReference
-    private UserEntity user;
 
-    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "team_id")
-    @JsonBackReference
     private TeamEntity team;
 
     @ManyToOne(fetch = FetchType.LAZY)
